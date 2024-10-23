@@ -97,11 +97,12 @@ input, select, button {
     flex-direction: column;
     justify-self: center;
     align-self: center;
-    border: 2px solid red;
+
 }
 
 .total{
     text-align: end;
+    margin-right: 100px;
 }
 
 .activities {
@@ -111,7 +112,6 @@ input, select, button {
     align-items: center;
     text-align: center;
     width: 100%;
-    border: 2px solid red;
 }
 
 .activity {
@@ -138,12 +138,33 @@ input, select, button {
     padding: 20px;
     border-radius: 5px;
     width: 80%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
 }
 
+
 .credit-card-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card-number{
+    width: 50%;
+    padding: 10px 10px 10px 0px;
+}
+
+
+.expiration-date{
+    width: 25%;
+    padding: 10px 10px 10px 0px;
+}
+
+.cvv{
+    width: 25%;
+    padding: 10px 10px 10px 0px;
 }
 
 .paypal{
