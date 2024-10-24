@@ -7,141 +7,186 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <form action="#" method="POST">
-            <div class="form-sections">
-                
-                <div class="section basic-info">
-                    <h2>Basic Info</h2>
+
+    <header class="header-container">
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
+    </header>
+    <main class="main-container">
+
+        <p class="required-info">* - required field</p>
+        
+
+        <section class="info-card">
+
+            <section class="basic-info-card">
+                <h1>Basic Info</h1>
+                <section class="name-input">
                     <label for="name">Name: *</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" name="name" id="name">
+                </section>
 
-                    <label for="email">Email Address: *</label>
-                    <input type="email" id="email" name="email" required>
+                <section class="email-input">
+                    <label for="email">Email address: *</label>
+                    <input type="email" name="email" id="name">
+                </section>
 
-                    <label for="job-role">Job Role</label>
-                    <select id="job-role" name="job-role">
+                <section class="job-input">
+                    <label for="job-role">Job role</label>
+                    <select name="job-info-card" id="">
                         <option value="full-stack">Full Stack Developer</option>
                         <option value="frontend">Frontend Developer</option>
                         <option value="backend">Backend Developer</option>
                     </select>
+                </section>
+            </section>
 
-                    <input type="text" placeholder="Other job role?" name="other-job-role">
-                </div>
+            <section class="shirt-info-card">
 
-                <div class="section t-shirt-info">
-                    <h2>T-Shirt Info</h2>
-                    <div class="shirt-size-design">
-                        <div class="shirt-size">
-                            <label for="size">Size:</label>
+                <section class="shirt-info">
+                <h1>T-Shirt Info</h1>
+                <section class="shirt-size-design">
+                    <section class="shirt-size">
+                        <label for="size">Size:</label>
                             <select id="size" name="size">
                                 <option value="s">S</option>
                                 <option value="m" selected>M</option>
                                 <option value="l">L</option>
                             </select>
-                        </div>
-                        <div class="shirt-design">
-                            <label for="design">Design:</label>
-                            <select id="design" name="design">
-                                <option value="theme1">Theme 1</option>
-                                <option value="theme2">Theme 2</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="shirt-color">
-                        <label for="color">Color:</label>
-                        <select id="color" name="color">
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
+                    </section>
+
+                    <section class="shirt-design">
+                        <label for="design">Design:</label>
+                        <select id="design" name="design">
+                            <option value="theme1">Theme 1</option>
+                            <option value="theme2">Theme 2</option>
+                        </select>
+                    </section>
+                </section>
+                <section class="shirt-color">
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
                     </select>
-                    </div>
-                </div>
-            </div>
+                </section>
+
+            </section>
+                <input type="text" name="other-job-role" id="other-job-role" placeholder="Other job role?">
+
+            </section>
+            
+
+        </section>
 
 
-            <div class="section main-container">
-                <h2>Register for Activities *</h2>
+        <section class="activities-card">
+
+            <h1 class="register-activities">Register For activities *</h1>
+            
+            <section class="activities">
                 
-                <div class="activities">
-                    <div class="activity main-conference">
-                        <label>
-                            <input type="checkbox" name="main-conference"> 
-                            <p>Main Conference ($200)</p>
-                        </label>
+                <section class="activity-card main-card">
+                    <div class="card-checkbox">
+                        <input type="checkbox" name="main-conference-input"> 
+                        <p>Main Conference</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/js.svg" alt="">
+                        <p>$200</p>
+                    </div>
+                </section>
+                <section class="activity-card react-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="js-libraries"> 
-                            <p>JavaScript Libraries Workshop ($100)</p>
-                        </label>
+                            <p>JavaScript Libraries Workshop</p>
+                        </div>
+                        <p class="schedule">Tuesday 9am-12pm</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/react.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
+                
+                <section class="activity-card node-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="nodejs"> 
-                            <p>Node.js Workshop ($100)</p>
-                    </label>
+                            <p>Node.js Workshop</p>
+                        </div>
+                        <p class="schedule">Tuesday 1pm-4pm</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/node.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
+                
+                <section class="activity-card angular-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="js-frameworks"> 
-                            <p>JavaScript Frameworks Workshop ($100)</p>
-                        </label>
+                            <p>JavaScript Frameworks Workshop</p>
+                        </div>
+                        <p class="schedule">Tuesday 9am-12pm</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/angular.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
+                
+                <section class="activity-card build-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="build-tools"> 
-                            <p>Build Tools Workshop ($100)</p>
-                        </label>
+                            <p>Build Tools Workshop</p>
+                        </div>
+                        <p class="schedule">Tuesday 1pm-4pm</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/build.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
+                
+                <section class="activity-card npm-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="npm"> 
-                            <p>npm Workshop ($100)</p>
-                        </label>
+                            <p>npm Workshop</p>
+                        </div>
+                        <p class="schedule">Wednesday 9am-12pm</p>
                     </div>
-                    <div class="activity">
-                        <label>
+                    <div class="card-logo-price">
+                        <img src="imgs/npm.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
+                
+                <section class="activity-card express-card">
+                    <div class="checkbox-schedule">
+                        <div class="card-checkbox">
                             <input type="checkbox" name="express"> 
-                            <p>Express Workshop ($100)</p>
-                        </label>
+                            <p>Express Workshop</p>
+                        </div>
+                        <p class="schedule">Wednesday 1pm-4pm</p>
                     </div>
-                </div>
-
-                <h2 class="total">Total: $0</h2>
-            </div>
-
-            <div class="section payment-info">
-                <h2>Payment Info</h2>
-
+                    <div class="card-logo-price">
+                        <img src="imgs/express.svg" alt="">
+                        <p>$100</p>
+                    </div>
+                </section>
                 
-                <label for="payment-method">I'm going to pay with:</label>
-                <select id="payment-method" name="payment-method">
-                    <option value="credit-card">Credit Card</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="bitcoin">Bitcoin</option>
-                </select>
 
-                <div class="credit-card-info">
-                    <div class="card-number">
-                        <label for="card-number">Card Number:</label>
-                        <input type="text" id="card-number" name="card-number" required>
-                    </div>
-                    <div class="expiration-date">
-                        <label for="expiration-date">Expiration Date:</label>
-                        <input type="date" id="expiration-date" name="expiration-date" required>
-                    </div>
-                    <div class="cvv">
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" name="cvv" required>
-                    </div>
-                </div>
-                
-                <p class="paypal"><strong>PayPal:</strong> We'll take you to PayPal's site to set up billing.</p>
-                <p class="bitcoin"><strong>Bitcoin:</strong> We'll take you to Coinbase to set up billing for Bitcoin transactions.</p>
-            </div>
+            </section>
 
-            <button type="submit">Register</button>
-        </form>
+            <h1 class="total">Total: $0</h1>
+
+        </section>
+
     </main>
 </body>
 </html>

@@ -1,193 +1,247 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f7f6;
-    padding: 20px;
+body{
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 28px;
-}
-
-form {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-}
-
-.form-sections {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.section {
-    padding: 20px;
-    border-radius: 5px;
-    width: 45%;
-
-}
-
-.basic-info label{
-    margin-top: 20px;
-    
-}
-
-.shirt-size-design{
-    display: flex;
-    flex-direction: row;
-}
-
-.shirt-size{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 20px;
-}
-
-.shirt-design{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 20px;
-}
-
-.shirt-color{
-    width: 100%;
-    padding: 10px 20px 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    max-width: 1024px;
 }
 
 input, select, button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 5px;
     width: 100%;
 }
 
-.main-container{
+label{
+    font-size: small;
+}
+
+h1{
+    font-weight: 400;
+    padding: 10px;
+}
+
+header p{
+    padding: 0px 10px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.header-container{
+    background-color: #da785f;
+    padding: 30px 90px;
     width: 100%;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #faf5ef;
+    width: 100%;
+    padding: 30px 90px;
+
+}
+
+.required-info{
+    display: flex;
+    align-self: flex-start;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-self: center;
-    align-self: center;
+    width: 100%;
+}
+
+.basic-info-card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    line-height: 40px;
+    height: 350px;
+}
+
+.job-info-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-input{
+    line-height: 20px;
+    padding: 10px;
+}
+
+.email-input{
+    padding: 10px;
+    line-height: 20px;
+}
+
+.job-input{
+    line-height: 20px;
+    padding: 10px;
+}
+
+.shirt-info{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 80%;
+}
+
+.shirt-info-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 40px;
+    width: 50%;
+    height: 350px;
+}
+
+.shirt-size-design{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0px 10px 10px;
+    margin-top: 7px;
+}
+
+#design{
+    width: 100%;
+}
+
+.shirt-size{
+    width: 30%;
+    line-height: 20px;
+}
+.shirt-design{
+    padding-left: 10px;
+    width: 90%;
+    line-height: 20px;
+}
+.shirt-color{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    line-height: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+#other-job-role{
+    margin-top: 42px;
+}
+
+.register-activities{
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
 
 }
 
 .total{
-    text-align: end;
-    margin-right: 100px;
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.activities-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .activities {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    padding: 20px 0;
 }
 
-.activity {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+.activity-card {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 40%;
-    margin: 10px;
-}
-
-
-.main-conference{
-    width: 82%;
-
-}
-
-.payment-info {
+    width: 48%;
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
-    padding: 20px;
     border-radius: 5px;
-    width: 80%;
+    padding: 10px;
+}
+
+.card-checkbox {
     display: flex;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card-checkbox input {
+    width: 10%;
+}
+
+.card-checkbox p{
+    margin-top: 2px;
+}
+
+.card-logo-price {
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
     flex-direction: column;
+    width: 20%;
+
 }
 
-
-.credit-card-info {
+.checkbox-schedule{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
 }
 
-.card-number{
+.main-card{
+    width: 100%;
+}
+
+.main-card .card-checkbox{
     width: 50%;
-    padding: 10px 10px 10px 0px;
 }
 
-
-.expiration-date{
-    width: 25%;
-    padding: 10px 10px 10px 0px;
+.main-card .card-logo-price{
+    width: 50%;
 }
 
-.cvv{
-    width: 25%;
-    padding: 10px 10px 10px 0px;
-}
-
-.paypal{
-    padding: 40px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 100%;
-}
-
-.bitcoin{
-    padding: 40px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 100%;
-}
-
-button {
-    background-color: #f0675a;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    border: none;
-    padding: 10px 0;
+.schedule{
+    margin-left: 27px;
 }
