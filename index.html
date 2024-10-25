@@ -187,6 +187,63 @@
 
         </section>
 
+        <h1 class="payment-card-title">Payment Info</h1>
+        <section class="payment-card">
+            <section class="payment-info">
+                <section class="payment-method-number">
+                    <p>I'm going to pay with:</p>
+                    <select name="payment-method" id="payment-method">
+                        <option value="card">Credit Card</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+
+                    <p>Card Number:*</p>
+                    <input type="number" name="card-number" id="card-number">
+                </section>
+
+                <section class="expiration-date-zip">
+                    <p>Expiration Date:</p>
+                    <select name="expiration-date" id="expiration-date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <p>Zip Code: *</p>
+                    <input type="number" name="zip-code" id="zip-code">
+                </section>
+
+
+                <section class="expiration-year-cvv">
+                    <p>Expiration Year:</p>
+                    <select name="expiration-year" id="expiration-year">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                
+                    <p>CVV: *</p>
+                    <input type="number" name="cvv" id="cvv">
+                </section>
+            </section>
+
+            <section class="payment-about">
+                <section class="about-card">
+                    <h4>PayPal</h4>
+                    <p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click "Register" below.</p>
+                </section>
+
+                <section class="about-card">
+                    <h4>Bitcoin</h4>
+                    <p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
+                </section>
+            </section>
+
+            <button type="button" class="register-button">Register</button>
+            
+        </section>
+
     </main>
 </body>
 </html>

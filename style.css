@@ -245,3 +245,82 @@ img{
 .schedule{
     margin-left: 27px;
 }
+
+
+.payment-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-info{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.payment-card-title{
+    display: flex;
+    align-self: flex-start;
+    padding: 0 0 20px;
+    margin-top: 80px;
+}
+
+.payment-method-number{
+    width: 50%;
+    line-height: 30px;
+}
+
+#payment-method{
+    margin-bottom: 20px;
+}
+
+.expiration-date-zip{
+    width: 23%;
+    line-height: 30px;
+}
+
+#expiration-date{
+    margin-bottom: 20px;
+}
+
+.expiration-year-cvv{
+    width: 23%;
+    line-height: 30px;
+}
+
+#expiration-year{
+    margin-bottom: 20px;
+}
+
+.payment-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+.about-card p{
+    font-size: 14px;
+}
+
+
+.register-button{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 20%;
+    background-color: #cf366b;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
